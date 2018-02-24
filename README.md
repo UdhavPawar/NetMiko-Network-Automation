@@ -1,7 +1,9 @@
-![Logo of the project](https://github.com/UdhavPawar/NetMiko-Network-Automation/blob/master/Professortocat.png)
 
 # NetMiko Network Automation
 > Pure Python, Life gets awesome when you start to use it.
+
+![Logo of the project](https://github.com/UdhavPawar/NetMiko-Network-Automation/blob/master/Professortocat.png)
+
 
 ## Installing / Getting started
 
