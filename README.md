@@ -24,10 +24,6 @@ What's all the bells and whistles this project can perform?
 * Infrastructure Programmability
 * We can even use OpenDaylight SDN Controller for mass devices control.
 
-## Configuration
-
-Here you should write what are all of the configurations a user can enter when
-using the project.
 
 ## Contributing
 
@@ -39,12 +35,10 @@ branch. Pull requests are warmly welcome."
 
 ## Links
 
-- Project homepage: https://your.github.com/awesome-project/
-- Repository: https://github.com/your/awesome-project/
-- Issue tracker: https://github.com/your/awesome-project/issues
+- Project homepage: https://github.com/UdhavPawar/NetMiko-Network-Automation/
+- Repository: https://github.com/UdhavPawar/NetMiko-Network-Automation
+- Issue tracker: https://github.com/UdhavPawar/NetMiko-Network-Automation/issues
   - In case of sensitive bugs like security vulnerabilities, please contact
-    my@email.com directly instead of using issue tracker. We value your effort
-    to improve the security and privacy of this project!
+    upawar78@gmail.com directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
 - Related projects:
-  - Your other project: https://github.com/your/other-project/
-  - Someone else's project: https://github.com/someones/awesome-project/
+  - F5-Ansible-Automation: https://github.com/UdhavPawar/F5-Ansible-Automation
