@@ -11,10 +11,10 @@ A quick introduction of the minimal setup you need to get a simple script up &
 running.
 
 ```shell
-- Python 2.7 / 3 knowledge
-- Netmiko Module for Python
-- Emulator like GNS3
-- Network Devices [NAT cloud, Switch, Router, etc.]
+- Python 2.7 / 3
+- Netmiko Python Module
+- GNS3 - Network Emulation
+- Cisco VIRL for Network Devices Images [IOSv]
 ```
 
 ## Features
