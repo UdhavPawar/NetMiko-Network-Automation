@@ -12,7 +12,7 @@ running.
 
 ```shell
 - Python 2.7 / 3
-- Netmiko Python Module
+- Python Modules - telnetlib , netmiko
 - GNS3 - Network Emulation
 - Cisco VIRL for Network Devices Images [IOSv]
 ```
