@@ -1,0 +1,90 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red46\green174\blue187;\red0\green0\blue0;\red208\green208\blue208;
+\red47\green180\blue29;}
+{\*\expandedcolortbl;;\cssrgb\c20198\c73241\c78251;\csgray\c0\c85000;\cssrgb\c84956\c84956\c84956;
+\cssrgb\c20239\c73899\c14948;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \CocoaLigature0 import
+\f1\b0 \cf4  getpass\
+
+\f0\b \cf2 import
+\f1\b0 \cf4  sys\
+
+\f0\b \cf2 import
+\f1\b0 \cf4  telnetlib\
+\
+HOST = 
+\f0\b \cf5 "192.168.122.241"
+\f1\b0 \cf4 \
+user = raw_input(
+\f0\b \cf5 "Enter remote account: "
+\f1\b0 \cf4 )\
+password = getpass.getpass()\
+\
+tn = telnetlib.Telnet(HOST)\
+\
+tn.read_until(
+\f0\b \cf5 "Username: "
+\f1\b0 \cf4 )\
+tn.write(user + 
+\f0\b \cf5 "\\n"
+\f1\b0 \cf4 )\
+
+\f0\b \cf2 if
+\f1\b0 \cf4  password:\
+  tn.read_until(
+\f0\b \cf5 "Password: "
+\f1\b0 \cf4 )\
+  tn.write(password + 
+\f0\b \cf5 "\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "enable\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "cisco\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "terminal length 0\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "conf t\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "int loop 0\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "ip address 1.1.1.1 255.255.255.255\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "int loop 1\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "ip address 2.2.2.2 255.255.255.255\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "exit\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "router ospf 1\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "network 0.0.0.0 255.255.255.255 area 0\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "end\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "sh ip protocols\\n"
+\f1\b0 \cf4 )\
+tn.write(
+\f0\b \cf5 "exit\\n"
+\f1\b0 \cf4 )\
+\
+
+\f0\b \cf2 print
+\f1\b0 \cf4  tn.read_all()\
+}
