@@ -1,0 +1,38 @@
+root@NetworkAutomation-1:~# python pythonR1script1.py 
+Enter remote account: upawar
+Password: 
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1>enable
+Password: 
+R1#terminal length 0
+R1#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         192.168.122.241 YES DHCP   up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         unassigned      YES unset  administratively down down    
+Loopback0                  unassigned      YES manual up                    up      
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int loop 0
+R1(config-if)#ip address 1.1.1.1 255.255.255.255
+R1(config-if)#end
+R1#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         192.168.122.241 YES DHCP   up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         unassigned      YES unset  administratively down down    
+Loopback0                  1.1.1.1         YES manual up                    up      
+R1#exit
+
+root@NetworkAutomation-1:~# 
+
