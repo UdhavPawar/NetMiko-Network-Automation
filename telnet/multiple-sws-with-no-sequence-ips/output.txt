@@ -1,0 +1,212 @@
+root@NetworkAutomation-1:~/multiple-sws-multiple-ips# cat switchesip 
+192.168.122.242
+192.168.122.243
+192.168.122.244
+192.168.122.245
+192.168.122.246
+root@NetworkAutomation-1:~/multiple-sws-multiple-ips# ./multiple-sws-loop.py 
+How many vlans to add: 5
+Enter remote account: upawar       
+Password: 
+Configuring:192.168.122.242
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 2
+S1(config-vlan)#name Python_VLAN_2
+S1(config-vlan)#vlan 3
+S1(config-vlan)#name Python_VLAN_3
+S1(config-vlan)#vlan 4
+S1(config-vlan)#name Python_VLAN_4
+S1(config-vlan)#vlan 5
+S1(config-vlan)#name Python_VLAN_5
+S1(config-vlan)#end
+S1#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S1#exit
+
+Configuring:192.168.122.243
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S2(config)#vlan 2
+S2(config-vlan)#name Python_VLAN_2
+S2(config-vlan)#vlan 3
+S2(config-vlan)#name Python_VLAN_3
+S2(config-vlan)#vlan 4
+S2(config-vlan)#name Python_VLAN_4
+S2(config-vlan)#vlan 5
+S2(config-vlan)#name Python_VLAN_5
+S2(config-vlan)#end
+S2#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S2#exit
+
+Configuring:192.168.122.244
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S3(config)#vlan 2
+S3(config-vlan)#name Python_VLAN_2
+S3(config-vlan)#vlan 3
+S3(config-vlan)#name Python_VLAN_3
+S3(config-vlan)#vlan 4
+S3(config-vlan)#name Python_VLAN_4
+S3(config-vlan)#vlan 5
+S3(config-vlan)#name Python_VLAN_5
+S3(config-vlan)#end
+S3#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S3#exit
+
+Configuring:192.168.122.245
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S4(config)#vlan 2
+S4(config-vlan)#name Python_VLAN_2
+S4(config-vlan)#vlan 3
+S4(config-vlan)#name Python_VLAN_3
+S4(config-vlan)#vlan 4
+S4(config-vlan)#name Python_VLAN_4
+S4(config-vlan)#vlan 5
+S4(config-vlan)#name Python_VLAN_5
+S4(config-vlan)#end
+S4#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S4#exit
+
+Configuring:192.168.122.246
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S5#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S5(config)#vlan 2
+S5(config-vlan)#name Python_VLAN_2
+S5(config-vlan)#vlan 3
+S5(config-vlan)#name Python_VLAN_3
+S5(config-vlan)#vlan 4
+S5(config-vlan)#name Python_VLAN_4
+S5(config-vlan)#vlan 5
+S5(config-vlan)#name Python_VLAN_5
+S5(config-vlan)#end
+S5#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S5#exit
+
+root@NetworkAutomation-1:~/multiple-sws-multiple-ips# 
+
