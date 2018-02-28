@@ -1,0 +1,26 @@
+root@NetworkAutomation-1:~/backup-multiple-sws# cat switchesip 
+192.168.122.242
+192.168.122.243
+192.168.122.244
+192.168.122.245
+192.168.122.246
+root@NetworkAutomation-1:~/backup-multiple-sws# ./backup-multiple-sws.py 
+Enter remote account: upawar
+Password: 
+Backing Up Running Config of 192.168.122.242
+
+Backing Up Running Config of 192.168.122.243
+
+Backing Up Running Config of 192.168.122.244
+
+Backing Up Running Config of 192.168.122.245
+
+Backing Up Running Config of 192.168.122.246
+
+root@NetworkAutomation-1:~/backup-multiple-sws# ls
+backup-multiple-sws.py  switch192.168.122.244  switchesip
+switch192.168.122.242   switch192.168.122.245
+switch192.168.122.243   switch192.168.122.246
+
+The switch*IP* file has the running configs of sw
+
