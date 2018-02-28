@@ -1,0 +1,251 @@
+root@NetworkAutomation-1:~# ./multiple-sws-config-cleanup.py 
+How many vlans to clean: 11
+Enter remote account: upawar
+Password: 
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S1#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+6    Python_VLAN_6                    active    
+7    Python_VLAN_7                    active    
+8    Python_VLAN_8                    active    
+9    Python_VLAN_9                    active    
+10   Python_VLAN_10                   active    
+11   Python_VLAN_11                   active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#no vlan 2-11
+S1(config)#end
+S1#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S1#exit
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S2#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+6    Python_VLAN_6                    active    
+7    Python_VLAN_7                    active    
+8    Python_VLAN_8                    active    
+9    Python_VLAN_9                    active    
+10   Python_VLAN_10                   active    
+11   Python_VLAN_11                   active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S2(config)#no vlan 2-11
+S2(config)#end
+S2#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S2#exit
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S3#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+6    Python_VLAN_6                    active    
+7    Python_VLAN_7                    active    
+8    Python_VLAN_8                    active    
+9    Python_VLAN_9                    active    
+10   Python_VLAN_10                   active    
+11   Python_VLAN_11                   active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S3(config)#no vlan 2-11
+S3(config)#end
+S3#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S3#exit
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S4#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+6    Python_VLAN_6                    active    
+7    Python_VLAN_7                    active    
+8    Python_VLAN_8                    active    
+9    Python_VLAN_9                    active    
+10   Python_VLAN_10                   active    
+11   Python_VLAN_11                   active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S4(config)#no vlan 2-11
+S4(config)#end
+S4#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S4#exit
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+S5#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+6    Python_VLAN_6                    active    
+7    Python_VLAN_7                    active    
+8    Python_VLAN_8                    active    
+9    Python_VLAN_9                    active    
+10   Python_VLAN_10                   active    
+11   Python_VLAN_11                   active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S5#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S5(config)#no vlan 2-11
+S5(config)#end
+S5#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S5#exit
+
+root@NetworkAutomation-1:~# 
+

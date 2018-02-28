@@ -1,0 +1,28 @@
+enable password cisco
+username upawar privilege 15 password 0 cisco
+line vty 0 4
+ login local
+ transport input all
+
+
+Configured IPs on vlan 1 on indiviual swicthes:
+192.168.122.241 IP of network automation ubuntu host
+192.168.122.242 SW1
+192.168.122.243 SW2 is made root of spanning tree
+192.168.122.244 SW3
+192.168.122.245 SW4
+192.168.122.246 SW5
+192.168.122.247 R1
+
+eg. adding ip on int vlan 1 in sw2:
+S1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#int vlan1
+S1(config-if)#ip add
+S1(config-if)#ip address 192.168.122.242 255.255.255.0
+S1(config-if)#no sh
+S1(config-if)#no shutdown 
+S1(config-if)#^Z
+S1#
+
+
