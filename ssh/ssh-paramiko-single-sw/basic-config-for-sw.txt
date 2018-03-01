@@ -1,0 +1,36 @@
+S1(config)#ip domain name cciepython.com
+S1(config)#enable pass
+S1(config)#enable password cisco
+S1(config)#usern
+S1(config)#username upawar pass
+S1(config)#username upawar password cisco
+S1(config)#userna
+S1(config)#username upawar privi
+S1(config)#username upawar privilege 15
+S1(config)#line vt
+S1(config)#line vty 0 4
+S1(config-line)#login
+S1(config-line)#login loca
+S1(config-line)#login local 
+S1(config-line)#tran
+S1(config-line)#transport in
+S1(config-line)#transport input all
+S1(config-line)#^Z
+S1#
+
+
+
+192.168.122.242 SW1
+
+eg. adding ip on int vlan 1 in sw2:
+S1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#int vlan1
+S1(config-if)#ip add
+S1(config-if)#ip address 192.168.122.242 255.255.255.0
+S1(config-if)#no sh
+S1(config-if)#no shutdown 
+S1(config-if)#^Z
+S1#
+
+
