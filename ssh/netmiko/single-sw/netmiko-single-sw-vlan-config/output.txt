@@ -1,0 +1,492 @@
+root@NetworkAutomation-1:~/netmiko# python netmiko-single-sw-vlan-config.py 
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Vlan1                  192.168.122.242 YES NVRAM  up                    up      
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Vlan1                  192.168.122.242 YES NVRAM  up                    up      
+Adding VLAN 2
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 2
+S1(config-vlan)#name Python_VLAN_2
+S1(config-vlan)#end
+S1#
+Adding VLAN 3
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 3
+S1(config-vlan)#name Python_VLAN_3
+S1(config-vlan)#end
+S1#
+Adding VLAN 4
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 4
+S1(config-vlan)#name Python_VLAN_4
+S1(config-vlan)#end
+S1#
+Adding VLAN 5
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 5
+S1(config-vlan)#name Python_VLAN_5
+S1(config-vlan)#end
+S1#
+Adding VLAN 6
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 6
+S1(config-vlan)#name Python_VLAN_6
+S1(config-vlan)#end
+S1#
+Adding VLAN 7
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 7
+S1(config-vlan)#name Python_VLAN_7
+S1(config-vlan)#end
+S1#
+Adding VLAN 8
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 8
+S1(config-vlan)#name Python_VLAN_8
+S1(config-vlan)#end
+S1#
+Adding VLAN 9
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 9
+S1(config-vlan)#name Python_VLAN_9
+S1(config-vlan)#end
+S1#
+Adding VLAN 10
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 10
+S1(config-vlan)#name Python_VLAN_10
+S1(config-vlan)#end
+S1#
+Adding VLAN 11
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 11
+S1(config-vlan)#name Python_VLAN_11
+S1(config-vlan)#end
+S1#
+Adding VLAN 12
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 12
+S1(config-vlan)#name Python_VLAN_12
+S1(config-vlan)#end
+S1#
+Adding VLAN 13
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 13
+S1(config-vlan)#name Python_VLAN_13
+S1(config-vlan)#end
+S1#
+Adding VLAN 14
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 14
+S1(config-vlan)#name Python_VLAN_14
+S1(config-vlan)#end
+S1#
+Adding VLAN 15
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 15
+S1(config-vlan)#name Python_VLAN_15
+S1(config-vlan)#end
+S1#
+Adding VLAN 16
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 16
+S1(config-vlan)#name Python_VLAN_16
+S1(config-vlan)#end
+S1#
+Adding VLAN 17
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 17
+S1(config-vlan)#name Python_VLAN_17
+S1(config-vlan)#end
+S1#
+Adding VLAN 18
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 18
+S1(config-vlan)#name Python_VLAN_18
+S1(config-vlan)#end
+S1#
+Adding VLAN 19
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 19
+S1(config-vlan)#name Python_VLAN_19
+S1(config-vlan)#end
+S1#
+Adding VLAN 20
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 20
+S1(config-vlan)#name Python_VLAN_20
+S1(config-vlan)#end
+S1#
+root@NetworkAutomation-1:~/netmiko# 
+
+
+
+
+
+
+
+
+
+
+S1(config)#do sh ip int br
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Vlan1                  192.168.122.242 YES NVRAM  up                    up      
+S1(config)#sh confi
+S1(config)#^Z      
+S1#sh 
+*Mar  1 15:34:40.656: %SYS-5-CONFIG_I: Configured from console by upawar on consolevla
+S1#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S1#sh vlan 
+S1#sh vlan co
+S1#sh vlan ? 
+  access-log    VACL Logging
+  access-map    Vlan access-map
+  brief         VTP all VLAN status in brief
+  dot1q         Display dot1q parameters
+  filter        VLAN filter information
+  group         VLAN group(s) information
+  id            VTP VLAN status by VLAN id
+  ifindex       SNMP ifIndex
+  internal      VLAN internal usage
+  mtu           VLAN MTU information
+  name          VTP VLAN status by VLAN name
+  private-vlan  Private VLAN information
+  remote-span   Remote SPAN VLANs
+  summary       VLAN summary information
+  |             Output modifiers
+  <cr>
+
+S1#sh vlan sum
+S1#sh vlan summary 
+Number of existing VLANs               : 5
+ Number of existing VTP VLANs          : 5
+ Number of existing extended VLANS     : 0
+
+S1#sh run vlan
+Building configuration...
+
+Current configuration:
+end
+
+S1#sh runn
+S1#sh running-config 
+Building configuration...
+
+Current configuration : 3771 bytes
+!
+! Last configuration change at 15:34:40 UTC Thu Mar 1 2018 by upawar
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname S1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password cisco
+!
+username upawar privilege 15 password 0 cisco
+no aaa new-model
+!
+!
+          
+S1#r mem
+?Invalid connection name
+S1#
+S1#
+S1#
+S1#wr mem
+Building configuration...
+Compressed configuration from 3771 bytes to 1737 bytes[OK]
+*Mar  1 15:41:11.684: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+S1#
+*Mar  1 15:41:14.018: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+S1#
+S1#
+S1#
+S1#
+*Mar  1 15:42:11.009: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up
+S1#
+*Mar  1 15:42:14.318: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+S1#
+S1#
+S1#
+S1#
+S1#
+S1#
+S1#sh ip int br
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              1.1.1.1         YES manual up                    up      
+Vlan1                  192.168.122.242 YES NVRAM  up                    up      
+S1#
+S1#
+S1#
+S1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#no int loop 0
+S1(config)#
+S1(config)#
+S1(config)#exit
+S1#
+S1#
+S1#
+S1#
+S1#
+*Mar  1 15:42:38.139: %SYS-5-CONFIG_I: Configured from console by upawar on console
+*Mar  1 15:42:38.670: %LINK-5-CHANGED: Interface Loopback0, changed state to administratively down
+S1#
+*Mar  1 15:42:39.691: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to down
+S1#
+S1#
+S1#
+S1#
+S1#   
+S1#
+S1#
+S1#
+S1#sh ip int br
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Vlan1                  192.168.122.242 YES NVRAM  up                    up      
+S1#
+S1#
+S1#
+S1#
+S1#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S1#
+S1#
+S1#
+S1#
+*Mar  1 15:45:13.164: %LINK-3-UPDOWN: Interface Loopback0, changed state to up
+*Mar  1 15:45:14.166: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up
+S1#
+*Mar  1 15:45:15.364: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:45:21.886: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:45:26.231: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:45:30.288: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:45:34.661: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:45:38.907: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:45:44.024: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:45:50.355: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:45:56.659: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:03.114: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:08.494: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:13.197: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:19.085: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:23.160: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:27.441: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:32.080: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:36.664: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:42.819: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:46.726: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+*Mar  1 15:46:51.195: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.135)
+S1#
+S1#
+S1#
+S1#sh ip int br
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              1.1.1.1         YES manual up                    up      
+Vlan1                  192.168.122.242 YES NVRAM  up                    up      
+S1#
+S1#
+S1#
+S1#     
+S1#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+2    Python_VLAN_2                    active    
+3    Python_VLAN_3                    active    
+4    Python_VLAN_4                    active    
+5    Python_VLAN_5                    active    
+6    Python_VLAN_6                    active    
+7    Python_VLAN_7                    active    
+8    Python_VLAN_8                    active    
+9    Python_VLAN_9                    active    
+10   Python_VLAN_10                   active    
+11   Python_VLAN_11                   active    
+12   Python_VLAN_12                   active    
+13   Python_VLAN_13                   active    
+14   Python_VLAN_14                   active    
+15   Python_VLAN_15                   active    
+16   Python_VLAN_16                   active    
+17   Python_VLAN_17                   active    
+          
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+18   Python_VLAN_18                   active    
+19   Python_VLAN_19                   active    
+20   Python_VLAN_20                   active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S1#
+S1#
+S1#
+
