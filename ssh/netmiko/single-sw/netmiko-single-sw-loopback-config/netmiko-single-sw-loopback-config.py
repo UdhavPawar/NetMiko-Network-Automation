@@ -15,4 +15,3 @@ print "Creating Loopback 0 and assign IP"
 config_commands = ['int loop 0', 'ip address 1.1.1.1 255.255.255.0']
 utput = net_connect.send_config_set(config_commands)
 print output
-
