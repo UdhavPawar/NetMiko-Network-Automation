@@ -1,0 +1,248 @@
+root@NetworkAutomation-1:~/netmiko/multiple-sw# python netmiko-multiple-sws-vlan-config.py 
+Configuring Loopback for:  192.168.122.242 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              unassigned      YES manual up                    up      
+Vlan1                  192.168.122.242 YES NVRAM  up                    up       
+
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#int loop 0
+S1(config-if)#ip address 1.1.1.1 255.255.255.0
+S1(config-if)#end
+S1# 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              1.1.1.1         YES manual up                    up      
+Vlan1                  192.168.122.242 YES NVRAM  up                    up       
+
+Configuring Loopback for:  192.168.122.243 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              unassigned      YES unset  up                    up      
+Vlan1                  192.168.122.243 YES NVRAM  up                    up       
+
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S2(config)#int loop 0
+S2(config-if)#ip address 2.2.2.2 255.255.255.0
+S2(config-if)#end
+S2# 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              2.2.2.2         YES manual up                    up      
+Vlan1                  192.168.122.243 YES NVRAM  up                    up       
+
+Configuring Loopback for:  192.168.122.244 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              unassigned      YES unset  up                    up      
+Vlan1                  192.168.122.244 YES NVRAM  up                    up       
+
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S3(config)#int loop 0
+S3(config-if)#ip address 3.3.3.3 255.255.255.0
+S3(config-if)#end
+S3# 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              3.3.3.3         YES manual up                    up      
+Vlan1                  192.168.122.244 YES NVRAM  up                    up       
+
+Configuring Loopback for:  192.168.122.245 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              unassigned      YES unset  up                    up      
+Vlan1                  192.168.122.245 YES NVRAM  up                    up       
+
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S4(config)#int loop 0
+S4(config-if)#ip address 4.4.4.4 255.255.255.0
+S4(config-if)#end
+S4# 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              4.4.4.4         YES manual up                    up      
+Vlan1                  192.168.122.245 YES NVRAM  up                    up       
+
+Configuring Loopback for:  192.168.122.246 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Vlan1                  192.168.122.246 YES NVRAM  up                    up       
+
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S5(config)#int loop 0
+S5(config-if)#ip address 5.5.5.5 255.255.255.0
+S5(config-if)#end
+S5# 
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0     unassigned      YES unset  up                    up      
+GigabitEthernet0/1     unassigned      YES unset  up                    up      
+GigabitEthernet0/2     unassigned      YES unset  up                    up      
+GigabitEthernet0/3     unassigned      YES unset  up                    up      
+GigabitEthernet1/0     unassigned      YES unset  up                    up      
+GigabitEthernet1/1     unassigned      YES unset  up                    up      
+GigabitEthernet1/2     unassigned      YES unset  up                    up      
+GigabitEthernet1/3     unassigned      YES unset  up                    up      
+GigabitEthernet2/0     unassigned      YES unset  up                    up      
+GigabitEthernet2/1     unassigned      YES unset  up                    up      
+GigabitEthernet2/2     unassigned      YES unset  up                    up      
+GigabitEthernet2/3     unassigned      YES unset  up                    up      
+GigabitEthernet3/0     unassigned      YES unset  up                    up      
+GigabitEthernet3/1     unassigned      YES unset  up                    up      
+GigabitEthernet3/2     unassigned      YES unset  up                    up      
+GigabitEthernet3/3     unassigned      YES unset  up                    up      
+Loopback0              5.5.5.5         YES manual up                    up      
+Vlan1                  192.168.122.246 YES NVRAM  up                    up       
+
+root@NetworkAutomation-1:~/netmiko/multiple-sw# 
+root@NetworkAutomation-1:~/netmiko/multiple-sw# 
+
