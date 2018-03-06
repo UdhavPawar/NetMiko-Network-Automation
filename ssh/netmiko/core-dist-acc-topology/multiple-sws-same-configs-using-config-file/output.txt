@@ -1,0 +1,180 @@
+root@NetworkAutomation-1:~# python netmiko-cda-topology-config.py 
+['vlan 2', 'int range g2/0 - 3', 'switchport mode access', 'switchport access vlan 2', 'int range g0/0 - 3', 'switchport trunk encapsulation dot1q', 'switchport mode trunk', 'switchport nonegotiate', 'switchport trunk allowed vlan 1,2', 'int range g1/0 - 1', 'switchport trunk encapsulation dot1q', 'switchport mode trunk', 'switchport nonegotiate', 'switchport trunk allowed vlan 1,2']
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 2
+S1(config-vlan)#int range g2/0 - 3
+S1(config-if-range)#switchport mode access
+S1(config-if-range)#switchport access vlan 2
+S1(config-if-range)#int range g0/0 - 3
+S1(config-if-range)#switchport trunk encapsulation dot1q
+S1(config-if-range)#switchport mode trunk
+S1(config-if-range)#switchport nonegotiate
+S1(config-if-range)#switchport trunk allowed vlan 1,2
+S1(config-if-range)#int range g1/0 - 1
+S1(config-if-range)#switchport trunk encapsulation dot1q
+S1(config-if-range)#switchport mode trunk
+S1(config-if-range)#switchport nonegotiate
+S1(config-if-range)#switchport trunk allowed vlan 1,2
+S1(config-if-range)#end
+S1#
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S2(config)#vlan 2
+S2(config-vlan)#int range g2/0 - 3
+S2(config-if-range)#switchport mode access
+S2(config-if-range)#switchport access vlan 2
+S2(config-if-range)#int range g0/0 - 3
+S2(config-if-range)#switchport trunk encapsulation dot1q
+S2(config-if-range)#switchport mode trunk
+S2(config-if-range)#switchport nonegotiate
+S2(config-if-range)#switchport trunk allowed vlan 1,2
+S2(config-if-range)#int range g1/0 - 1
+S2(config-if-range)#switchport trunk encapsulation dot1q
+S2(config-if-range)#switchport mode trunk
+S2(config-if-range)#switchport nonegotiate
+S2(config-if-range)#switchport trunk allowed vlan 1,2
+S2(config-if-range)#end
+S2#
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S3(config)#vlan 2
+S3(config-vlan)#int range g2/0 - 3
+S3(config-if-range)#switchport mode access
+S3(config-if-range)#switchport access vlan 2
+S3(config-if-range)#int range g0/0 - 3
+S3(config-if-range)#switchport trunk encapsulation dot1q
+S3(config-if-range)#switchport mode trunk
+S3(config-if-range)#switchport nonegotiate
+S3(config-if-range)#switchport trunk allowed vlan 1,2
+S3(config-if-range)#int range g1/0 - 1
+S3(config-if-range)#switchport trunk encapsulation dot1q
+S3(config-if-range)#switchport mode trunk
+S3(config-if-range)#switchport nonegotiate
+S3(config-if-range)#switchport trunk allowed vlan 1,2
+S3(config-if-range)#end
+S3#
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S4(config)#vlan 2
+S4(config-vlan)#int range g2/0 - 3
+S4(config-if-range)#switchport mode access
+S4(config-if-range)#switchport access vlan 2
+S4(config-if-range)#int range g0/0 - 3
+S4(config-if-range)#switchport trunk encapsulation dot1q
+S4(config-if-range)#switchport mode trunk
+S4(config-if-range)#switchport nonegotiate
+S4(config-if-range)#switchport trunk allowed vlan 1,2
+S4(config-if-range)#int range g1/0 - 1
+S4(config-if-range)#switchport trunk encapsulation dot1q
+S4(config-if-range)#switchport mode trunk
+S4(config-if-range)#switchport nonegotiate
+S4(config-if-range)#switchport trunk allowed vlan 1,2
+S4(config-if-range)#end
+S4#
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+S5(config)#vlan 2
+S5(config-vlan)#int range g2/0 - 3
+S5(config-if-range)#switchport mode access
+S5(config-if-range)#switchport access vlan 2
+S5(config-if-range)#int range g0/0 - 3
+S5(config-if-range)#switchport trunk encapsulation dot1q
+S5(config-if-range)#switchport mode trunk
+S5(config-if-range)#switchport nonegotiate
+S5(config-if-range)#switchport trunk allowed vlan 1,2
+S5(config-if-range)#int range g1/0 - 1
+S5(config-if-range)#switchport trunk encapsulation dot1q
+S5(config-if-range)#switchport mode trunk
+S5(config-if-range)#switchport nonegotiate
+S5(config-if-range)#switchport trunk allowed vlan 1,2
+S5(config-if-range)#end
+S5#
+root@NetworkAutomation-1:~# 
+root@NetworkAutomation-1:~# 
+root@NetworkAutomation-1:~# 
+
+
+
+
+
+
+Output on one of the switches:
+S3#show vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/1, Gi0/2, Gi0/3, Gi1/0
+                                                Gi1/1, Gi1/2, Gi1/3, Gi2/0
+                                                Gi2/1, Gi2/2, Gi2/3, Gi3/0
+                                                Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S3#
+S3#sh run int g0/0
+Building configuration...
+
+Current configuration : 71 bytes
+!
+interface GigabitEthernet0/0
+ media-type rj45
+ negotiation auto
+end
+
+S3#
+S3#sh run int g2/0
+Building configuration...
+
+Current configuration : 71 bytes
+!
+interface GigabitEthernet2/0
+ media-type rj45
+ negotiation auto
+end
+
+S3#
+*Mar  4 04:07:46.237: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.53)
+S3#
+S3#sh vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi1/2, Gi1/3, Gi3/0, Gi3/1
+                                                Gi3/2, Gi3/3
+2    VLAN0002                         active    Gi2/0, Gi2/1, Gi2/2, Gi2/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+S3#
+S3#sh run int g0/0
+Building configuration...
+
+Current configuration : 191 bytes
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1,2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport nonegotiate
+ media-type rj45
+ negotiation auto
+end
+
+S3#
+S3#sh run int g2/0
+Building configuration...
+
+Current configuration : 121 bytes
+!
+interface GigabitEthernet2/0
+ switchport access vlan 2
+ switchport mode access
+ media-type rj45
+ negotiation auto
+end
+
+S3#
+
