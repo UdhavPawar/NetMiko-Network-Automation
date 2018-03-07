@@ -1,0 +1,409 @@
+root@NetworkAutomation-1:~/napalm-single-sw# python get-int-info.py 
+{
+    "os_version": "vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Experimental Version 15.2(20170321:233949) [mmen 101]", 
+    "uptime": 2640, 
+    "interface_list": [
+        "GigabitEthernet0/0", 
+        "GigabitEthernet0/1", 
+        "GigabitEthernet0/2", 
+        "GigabitEthernet0/3", 
+        "GigabitEthernet1/0", 
+        "GigabitEthernet1/1", 
+        "GigabitEthernet1/2", 
+        "GigabitEthernet1/3", 
+        "GigabitEthernet2/0", 
+        "GigabitEthernet2/1", 
+        "GigabitEthernet2/2", 
+        "GigabitEthernet2/3", 
+        "GigabitEthernet3/0", 
+        "GigabitEthernet3/1", 
+        "GigabitEthernet3/2", 
+        "GigabitEthernet3/3", 
+        "Vlan1"
+    ], 
+    "vendor": "Cisco", 
+    "serial_number": "9W30TQ325V2", 
+    "model": "IOSv", 
+    "hostname": "S1", 
+    "fqdn": "S1.cbtnuggets.com"
+}
+{
+    "GigabitEthernet1/2": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:06", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet1/3": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:07", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet1/0": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:04", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet1/1": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:05", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet0/3": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:03", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet0/2": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:02", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet0/1": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:01", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet0/0": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:00", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet3/0": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:0C", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet3/1": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:0D", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet3/2": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:0E", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet3/3": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:0F", 
+        "speed": 1000
+    }, 
+    "Vlan1": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:80:01", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet2/1": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:09", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet2/0": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:08", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet2/3": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:0B", 
+        "speed": 1000
+    }, 
+    "GigabitEthernet2/2": {
+        "is_enabled": true, 
+        "description": "", 
+        "last_flapped": -1.0, 
+        "is_up": true, 
+        "mac_address": "00:6A:39:E9:72:0A", 
+        "speed": 1000
+    }
+}
+{
+    "GigabitEthernet1/2": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet1/3": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116725, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet1/0": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116702, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet1/1": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116367, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1590, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet0/3": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet0/2": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet0/1": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet0/0": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 334368, 
+        "tx_errors": 0, 
+        "rx_octets": 180837, 
+        "tx_unicast_packets": 1758, 
+        "rx_errors": 2527, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 1, 
+        "rx_broadcast_packets": 1361, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 2811
+    }, 
+    "GigabitEthernet3/0": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet3/1": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet3/2": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet3/3": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 117091, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1592, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "Vlan1": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 329313, 
+        "tx_errors": 0, 
+        "rx_octets": 110451, 
+        "tx_unicast_packets": 1571, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 1479
+    }, 
+    "GigabitEthernet2/1": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet2/0": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116363, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1590, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet2/3": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116729, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1591, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }, 
+    "GigabitEthernet2/2": {
+        "tx_multicast_packets": -1, 
+        "tx_discards": 0, 
+        "tx_octets": 116363, 
+        "tx_errors": 0, 
+        "rx_octets": 0, 
+        "tx_unicast_packets": 1590, 
+        "rx_errors": 0, 
+        "tx_broadcast_packets": -1, 
+        "rx_multicast_packets": 0, 
+        "rx_broadcast_packets": 0, 
+        "rx_discards": 0, 
+        "rx_unicast_packets": 0
+    }
+}
+root@NetworkAutomation-1:~/napalm-single-sw# 
+
