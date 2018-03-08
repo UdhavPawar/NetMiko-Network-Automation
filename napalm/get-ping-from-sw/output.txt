@@ -1,0 +1,35 @@
+root@NetworkAutomation-1:~/napalm-single-sw# python get-ping-from-sw.py 
+{
+    "success": {
+        "rtt_avg": 18.0, 
+        "packet_loss": 0, 
+        "rtt_max": 25.0, 
+        "rtt_stddev": 0.0, 
+        "rtt_min": 14.0, 
+        "probes_sent": 5, 
+        "results": [
+            {
+                "rtt": 0.0, 
+                "ip_address": "google.com"
+            }, 
+            {
+                "rtt": 0.0, 
+                "ip_address": "google.com"
+            }, 
+            {
+                "rtt": 0.0, 
+                "ip_address": "google.com"
+            }, 
+            {
+                "rtt": 0.0, 
+                "ip_address": "google.com"
+            }, 
+            {
+                "rtt": 0.0, 
+                "ip_address": "google.com"
+            }
+        ]
+    }
+}
+root@NetworkAutomation-1:~/napalm-single-sw# 
+
