@@ -1,0 +1,58 @@
+root@NetworkAutomation-1:~/napalm-single-sw# python get-mac-add-table.py 
+[
+    {
+        "vlan": 1, 
+        "last_move": -1.0, 
+        "active": true, 
+        "mac": "00:6A:39:19:A3:00", 
+        "static": false, 
+        "interface": "Gi0/1", 
+        "moves": -1
+    }, 
+    {
+        "vlan": 1, 
+        "last_move": -1.0, 
+        "active": true, 
+        "mac": "6E:94:C0:4F:5E:07", 
+        "static": false, 
+        "interface": "Gi0/0", 
+        "moves": -1
+    }, 
+    {
+        "vlan": 1, 
+        "last_move": -1.0, 
+        "active": true, 
+        "mac": "9A:A8:6E:8C:F1:3C", 
+        "static": false, 
+        "interface": "Gi0/0", 
+        "moves": -1
+    }
+]
+[
+    {
+        "interface": "Vlan1", 
+        "ip": "192.168.122.1", 
+        "mac": "9A:A8:6E:8C:F1:3C", 
+        "age": 1.0
+    }, 
+    {
+        "interface": "Vlan1", 
+        "ip": "192.168.122.80", 
+        "mac": "6E:94:C0:4F:5E:07", 
+        "age": 8.0
+    }, 
+    {
+        "interface": "Vlan1", 
+        "ip": "192.168.122.127", 
+        "mac": "00:6A:39:19:A3:00", 
+        "age": 11.0
+    }, 
+    {
+        "interface": "Vlan1", 
+        "ip": "192.168.122.242", 
+        "mac": "00:6A:39:E9:80:01", 
+        "age": 0.0
+    }
+]
+root@NetworkAutomation-1:~/napalm-single-sw# 
+
