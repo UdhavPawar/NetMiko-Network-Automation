@@ -1,0 +1,31 @@
+root@NetworkAutomation-1:~/config-acl# python config-acl.py 
+Configuring ACL on 192.168.122.242
+root@NetworkAutomation-1:~/config-acl# 
+
+
+
+
+
+S1#sh run | in access
+S1#
+*Mar  7 06:04:22.797: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:04:31.480: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:04:34.963: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:04:35.661: %PARSER-4-BADCFG: Unexpected end of configuration file.
+
+S1#
+*Mar  7 06:04:38.941: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:04:42.374: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Mar  7 06:04:43.135: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+S1#  
+S1#sh run | in access
+access-list 100 permit icmp any any
+access-list 100 permit tcp any any eq domain
+access-list 100 permit tcp any any eq www
+access-list 100 permit tcp any any eq 443
+S1#
+
