@@ -1,0 +1,11 @@
+root@NetworkAutomation-1:~/config-acl# python check-if-present-else-add-acl.py 
+Configuring ACL on 192.168.122.242
++access-list 100 permit icmp any any
++access-list 100 permit tcp any any eq domain
++access-list 100 permit tcp any any eq www
++access-list 100 permit tcp any any eq 443
+root@NetworkAutomation-1:~/config-acl# python check-if-present-else-add-acl.py 
+Configuring ACL on 192.168.122.242
+No changes required
+root@NetworkAutomation-1:~/config-acl# 
+
