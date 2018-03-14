@@ -1,0 +1,54 @@
+root@NetworkAutomation-1:~/config-acl# python check-ospf-else-add.py 
+Configuring acl.cfg on 192.168.122.242
++access-list 100 permit icmp any any
++access-list 100 permit tcp any any eq domain
++access-list 100 permit tcp any any eq www
++access-list 100 permit tcp any any eq 443
+Configuring ospf.cfg on 192.168.122.242
++router ospf 1
++  network 10.1.1.0 0.0.0.255 area 0
+root@NetworkAutomation-1:~/config-acl# 
+
+
+
+
+
+S1#sh run | in access
+S1#sh ip protocols | in ospf
+S1#
+*Mar  7 06:29:43.378: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:29:52.043: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:29:55.656: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:29:56.334: %PARSER-4-BADCFG: Unexpected end of configuration file.
+
+S1#
+*Mar  7 06:29:59.726: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:30:02.936: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Mar  7 06:30:03.708: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+S1#
+*Mar  7 06:30:20.255: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:30:28.724: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:30:32.350: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:30:33.119: %PARSER-4-BADCFG: Unexpected end of configuration file.
+
+S1#
+*Mar  7 06:30:36.508: %SYS-5-CONFIG_I: Configured from console by upawar on vty0 (192.168.122.97)
+S1#
+*Mar  7 06:30:39.741: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Mar  7 06:30:40.505: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+S1#sh run | in access
+access-list 100 permit icmp any any
+access-list 100 permit tcp any any eq domain
+access-list 100 permit tcp any any eq www
+access-list 100 permit tcp any any eq 443
+S1#sh ip protocols | in ospf
+Routing Protocol is "ospf 1"
+S1#
+
