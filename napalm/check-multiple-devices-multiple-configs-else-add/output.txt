@@ -1,0 +1,34 @@
+root@NetworkAutomation-1:~/config-acl# python check-multiple-devices-multiple-configs-else-add.py 
+Configuring: 192.168.122.242
+No changes required
++router ospf 1
++  network 10.1.1.0 0.0.0.255 area 0
++  network 10.1.2.0 0.0.0.255 area 2
++  network 10.1.3.0 0.0.0.255 area 3
+Configuring: 192.168.122.127
+No changes required
++router ospf 1
++  network 10.1.1.0 0.0.0.255 area 0
++  network 10.1.2.0 0.0.0.255 area 2
++  network 10.1.3.0 0.0.0.255 area 3
+root@NetworkAutomation-1:~/config-acl# 
+root@NetworkAutomation-1:~/config-acl# 
+root@NetworkAutomation-1:~/config-acl# 
+root@NetworkAutomation-1:~/config-acl# 
+root@NetworkAutomation-1:~/config-acl# 
+root@NetworkAutomation-1:~/config-acl# python check-multiple-devices-multiple-configs-else-add.py 
+Configuring: 192.168.122.242
++access-list 100 permit icmp any any
++access-list 100 permit tcp any any eq domain
++access-list 100 permit tcp any any eq www
++access-list 100 permit tcp any any eq 443
++router ospf 1
++  network 10.1.1.0 0.0.0.255 area 0
+Configuring: 192.168.122.127
+No changes required
++router ospf 1
++  network 10.1.1.0 0.0.0.255 area 0
++  network 10.1.2.0 0.0.0.255 area 2
++  network 10.1.3.0 0.0.0.255 area 3
+root@NetworkAutomation-1:~/config-acl# 
+
