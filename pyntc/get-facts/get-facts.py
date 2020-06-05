@@ -8,4 +8,3 @@ iosv_output = iosv_l2.facts
 print json.dumps(iosv_output, indent=4)
 
 iosv_l2.close()
-
